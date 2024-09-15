@@ -26,10 +26,14 @@ public class ModBlocks {
     public static final Block DIRTY_CONCRETE = register(
             new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE)), "dirty_concrete", true
     );
+    public static final Block OLD_CONCRETE = register(
+            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE)), "old_concrete", true
+    );
 
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(JIHANKI_ITEM_GROUP_KEY).register(itemGroup -> {
             itemGroup.add(ModBlocks.DIRTY_CONCRETE.asItem());  // Add to item group.
+            itemGroup.add(ModBlocks.OLD_CONCRETE.asItem());
         });
     }
 }

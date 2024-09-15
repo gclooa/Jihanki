@@ -7,6 +7,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,6 +23,7 @@ public class Jihanki implements ModInitializer {
 			ResourceManagerHelper.registerBuiltinResourcePack(
 					new Identifier(MOD_ID, "jihanki_ctm"),
 					modContainer,
+					Text.translatable("resourcePack.jihanki.jihanki_ctm.name"),
 					ResourcePackActivationType.DEFAULT_ENABLED);
 		});
 		ModItems.initialize();
