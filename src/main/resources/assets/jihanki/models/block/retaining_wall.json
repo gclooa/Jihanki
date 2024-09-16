@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "jihanki:block/dirty_concrete_top",
+    "side": "jihanki:block/retaining_wall"
+  }
+}

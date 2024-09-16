@@ -29,11 +29,16 @@ public class ModBlocks {
     public static final Block OLD_CONCRETE = register(
             new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE)), "old_concrete", true
     );
+    public static final Block RETAINING_WALL = register(
+            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE)), "retaining_wall", true
+    );
 
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(JIHANKI_ITEM_GROUP_KEY).register(itemGroup -> {
-            itemGroup.add(ModBlocks.DIRTY_CONCRETE.asItem());  // Add to item group.
+            // Add to item group.
+            itemGroup.add(ModBlocks.DIRTY_CONCRETE.asItem());
             itemGroup.add(ModBlocks.OLD_CONCRETE.asItem());
+            itemGroup.add(ModBlocks.RETAINING_WALL.asItem());
         });
     }
 }
