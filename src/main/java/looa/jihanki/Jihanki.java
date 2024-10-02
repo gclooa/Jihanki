@@ -1,6 +1,6 @@
 package looa.jihanki;
 
-import looa.jihanki.item.ModBlocks;
+import looa.jihanki.block.ModBlocks;
 import looa.jihanki.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 

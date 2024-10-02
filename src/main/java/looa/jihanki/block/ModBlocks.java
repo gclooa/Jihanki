@@ -1,4 +1,4 @@
-package looa.jihanki.item;
+package looa.jihanki.block;
 
 import looa.jihanki.Jihanki;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -32,6 +32,9 @@ public class ModBlocks {
     public static final Block RETAINING_WALL = register(
             new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE)), "retaining_wall", true
     );
+    public static final Block VENDING_MACHINE = register(
+            new Block(AbstractBlock.Settings.create().nonOpaque().sounds(BlockSoundGroup.STONE)), "vending_machine", true
+    );
 
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(JIHANKI_ITEM_GROUP_KEY).register(itemGroup -> {
@@ -39,6 +42,7 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.DIRTY_CONCRETE.asItem());
             itemGroup.add(ModBlocks.OLD_CONCRETE.asItem());
             itemGroup.add(ModBlocks.RETAINING_WALL.asItem());
+            itemGroup.add(ModBlocks.VENDING_MACHINE.asItem());
         });
     }
 }
