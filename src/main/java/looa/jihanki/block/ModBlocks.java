@@ -1,6 +1,7 @@
 package looa.jihanki.block;
 
 import looa.jihanki.Jihanki;
+import looa.jihanki.block.entity.VendingMachine;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -33,7 +34,10 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE)), "retaining_wall", true
     );
     public static final Block VENDING_MACHINE = register(
-            new Block(AbstractBlock.Settings.create().nonOpaque().sounds(BlockSoundGroup.STONE)), "vending_machine", true
+            new VendingMachine(AbstractBlock.Settings.create().nonOpaque().sounds(BlockSoundGroup.STONE)), "vending_machine", true
+    );
+    public static final Block VENDING_MACHINE_WHITE = register(
+            new Block(AbstractBlock.Settings.create().nonOpaque().sounds(BlockSoundGroup.STONE)), "vending_machine_white", true
     );
 
     public static void initialize() {
@@ -43,6 +47,7 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.OLD_CONCRETE.asItem());
             itemGroup.add(ModBlocks.RETAINING_WALL.asItem());
             itemGroup.add(ModBlocks.VENDING_MACHINE.asItem());
+            itemGroup.add(ModBlocks.VENDING_MACHINE_WHITE.asItem());
         });
     }
 }

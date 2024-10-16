@@ -1,5 +1,8 @@
 {
   "variants": {
-    "": { "model": "jihanki:block/vending_machine" }
+    "facing=north": { "model": "jihanki:block/vending_machine" },
+    "facing=east":  { "model": "jihanki:block/vending_machine", "y":  90 },
+    "facing=south": { "model": "jihanki:block/vending_machine", "y": 180 },
+    "facing=west":  { "model": "jihanki:block/vending_machine", "y": 270 }
   }
 }

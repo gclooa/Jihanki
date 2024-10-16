@@ -1,6 +1,7 @@
 package looa.jihanki;
 
 import looa.jihanki.block.ModBlocks;
+import looa.jihanki.block.entity.ModBlockEntities;
 import looa.jihanki.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -28,5 +29,6 @@ public class Jihanki implements ModInitializer {
 		});
 		ModItems.initialize();
 		ModBlocks.initialize();
+		ModBlockEntities.initialize();
 	}
 }

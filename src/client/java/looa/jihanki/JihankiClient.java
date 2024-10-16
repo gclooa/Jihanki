@@ -10,6 +10,7 @@ public class JihankiClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.VENDING_MACHINE, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.VENDING_MACHINE_WHITE, RenderLayer.getCutout());
 
 	}
 }

@@ -1,0 +1,30 @@
+{
+  "parent": "jihanki:block/vending_machine_white",
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [2, 0, 0],
+      "scale": [0.2, 0.2, 0.2]
+    },
+    "thirdperson_lefthand": {
+      "translation": [2, 0, 0],
+      "scale": [0.2, 0.2, 0.2]
+    },
+    "firstperson_righthand": {
+      "scale": [0.2, 0.2, 0.2]
+    },
+    "firstperson_lefthand": {
+      "scale": [0.2, 0.2, 0.2]
+    },
+    "ground": {
+      "scale": [0.2, 0.2, 0.2]
+    },
+    "gui": {
+      "rotation": [18, 155, 0],
+      "translation": [0, 0.5, 0],
+      "scale": [0.3, 0.3, 0.3]
+    },
+    "fixed": {
+      "scale": [0.4, 0.4, 0.4]
+    }
+  }
+}
